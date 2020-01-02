@@ -1,39 +1,42 @@
 import java.io.File
 
 const val TAVERN_NAME ="Taernyl's Folly"
-var playerGold=10
-var playerSilver =10
+
+
+
+val menuList = File("data/tavern-menu-data.txt").readText().split("\n")
+val patronGold = mutableMapOf<String, Double>()
 var patronList = mutableListOf<String>("Eli", "Mordoc", "Sophie")
 val lastName = listOf<String>("Ironfoot", "Fernsworth", "Baggins")
-val menuList = File("data/tavern-menu-data.txt").readText().split("\n")
+val uniquePatrons = mutableSetOf<String>()
 
 
-
-
-fun main(args: Array<String>) {
-//    placeOrder("shandy,Dragon's Breath,5.91")
-    patronList.forEachIndexed { index, patron ->
-        println("Good evenign, $patron - youre are #${index + 1} in line")
-        placeOrder(patron, "shandy, dragons breath, 5.91")
+fun main(args: Array<String>)
+{
+    (0..9).forEach {
+        val first = patronList.shuffled().first()
+        val last = lastName.shuffled().first()
+        val name = "$first $last"
+        uniquePatrons += name
     }
 
-    menuList.forEachIndexed{index, data -> println("$index: $data")
+    uniquePatrons.forEach {
+        patronGold[it]=6.0
     }
+
+    var orderCount =0
+    while(orderCount <=9){
+        placeOrder(uniquePatrons.shuffled().first(), menuList.shuffled().first())
+        orderCount++
+    }
+
+
+
 }
 
-fun performPurchase(price: Double){
-    displayBalance()
-    val totalPurse = playerGold + (playerSilver/100.0)
-    print("Total purse : $totalPurse")
-
-    println("purchasing item for $$price")
-
-    val remainingBalance = totalPurse- price
-    println("remaining balance  ${"%.2f".format(remainingBalance)}")
-}
-
-fun displayBalance() {
-    println("Players purse balance: Gold $playerGold, Silver $playerSilver ")
+fun performPurchase(price: Double, patronName: String){
+    val totalPurse = patronGold.getValue(patronName)
+    patronGold[patronName] = totalPurse - price
 }
 
 private fun placeOrder(patronName: String, menuData: String) {
@@ -44,7 +47,7 @@ private fun placeOrder(patronName: String, menuData: String) {
     val message = "Madrigal buys a $name ($type) for $price."
     println(message)
 
-    //performPurchase(price.toDouble())
+    performPurchase(price.toDouble(), patronName)
 
     val phrase = if (name == "Dragon's Breath") {
         "$patronName exclaims : ${toDragonSpeak("ah, delicious $name!")}"
