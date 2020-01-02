@@ -1,16 +1,24 @@
+import java.io.File
+
 const val TAVERN_NAME ="Taernyl's Folly"
 var playerGold=10
 var playerSilver =10
 var patronList = mutableListOf<String>("Eli", "Mordoc", "Sophie")
+val lastName = listOf<String>("Ironfoot", "Fernsworth", "Baggins")
+val menuList = File("data/tavern-menu-data.txt").readText().split("\n")
+
+
 
 
 fun main(args: Array<String>) {
-    placeOrder("shandy,Dragon's Breath,5.91")
-    println(patronList)
-    patronList.remove("Eli")
-    patronList.add("alex")
-    println(patronList)
+//    placeOrder("shandy,Dragon's Breath,5.91")
+    patronList.forEachIndexed { index, patron ->
+        println("Good evenign, $patron - youre are #${index + 1} in line")
+        placeOrder(patron, "shandy, dragons breath, 5.91")
+    }
 
+    menuList.forEachIndexed{index, data -> println("$index: $data")
+    }
 }
 
 fun performPurchase(price: Double){
@@ -28,22 +36,20 @@ fun displayBalance() {
     println("Players purse balance: Gold $playerGold, Silver $playerSilver ")
 }
 
-private fun placeOrder(menuData: String) {
-    var indexofApostrophe = TAVERN_NAME.indexOf('\'')
+private fun placeOrder(patronName: String, menuData: String) {
+    val indexofApostrophe = TAVERN_NAME.indexOf('\'')
     val tavernMaster = TAVERN_NAME.substring(0 until indexofApostrophe)
-    println("Madrigal speaks with $tavernMaster about their order")
-
 
     val(type, name, price) = menuData.split(',')
     val message = "Madrigal buys a $name ($type) for $price."
     println(message)
 
-    performPurchase(price.toDouble())
+    //performPurchase(price.toDouble())
 
     val phrase = if (name == "Dragon's Breath") {
-        "Madrigal exclaims ${toDragonSpeak("Ah, delicious $name!")}"
+        "$patronName exclaims : ${toDragonSpeak("ah, delicious $name!")}"
     } else {
-        "Madrigal says: Thanks for the $name."
+        "$patronName says : thanks for the $name"
     }
     println(phrase)
 
