@@ -13,6 +13,21 @@ val uniquePatrons = mutableSetOf<String>()
 
 fun main(args: Array<String>)
 {
+
+    if(patronList.contains("Eli")){
+        println("Tavern master says: Eli's in the back playing cards")
+    }else
+    {
+        println("the tavern mastears says Elis isnt here")
+    }
+
+    if (patronList.containsAll(listOf("Sophie", "Mordoc"))){
+        println("The tavern master says: yea, they are seated by the stew keetle")
+    }
+    else{
+        println("The tavern masters says : nay the departed hours ago")
+    }
+
     (0..9).forEach {
         val first = patronList.shuffled().first()
         val last = lastName.shuffled().first()
@@ -24,14 +39,22 @@ fun main(args: Array<String>)
         patronGold[it]=6.0
     }
 
+    //Perform Place order
     var orderCount =0
     while(orderCount <=9){
         placeOrder(uniquePatrons.shuffled().first(), menuList.shuffled().first())
         orderCount++
     }
 
+    displayPatronBalances()
 
+}
 
+fun displayPatronBalances() {
+    patronGold.forEach { patron, balance ->
+        println("$patron, balance: ${"%.2f".format(balance)}")
+
+    }
 }
 
 fun performPurchase(price: Double, patronName: String){
@@ -43,10 +66,15 @@ private fun placeOrder(patronName: String, menuData: String) {
     val indexofApostrophe = TAVERN_NAME.indexOf('\'')
     val tavernMaster = TAVERN_NAME.substring(0 until indexofApostrophe)
 
+    println("-----")
+    println("$patronName speaks with $tavernMaster about their order")
+
+    //split info from menudata
     val(type, name, price) = menuData.split(',')
-    val message = "Madrigal buys a $name ($type) for $price."
+    val message = "$patronName buys a $name ($type) for $price."
     println(message)
 
+    //Reduce the gold
     performPurchase(price.toDouble(), patronName)
 
     val phrase = if (name == "Dragon's Breath") {
