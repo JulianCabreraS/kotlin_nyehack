@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e3935ad-0320-4c50-a14e-6073483e74d2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/bignerdranch/nyethack/Game.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bignerdranch/nyethack/Player.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tavern-menu-data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/tavern-menu-data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tavern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tavern.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NyetHack/GameKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NyetHack/META-INF/NyetHack.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NyetHack/META-INF/NyetHack.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tavern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bignerdranch/nyethack/Tavern.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -22,7 +27,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/Tavern.kt" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/com/bignerdranch/nyethack/Tavern.kt" root0="SKIP_INSPECTION" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -52,28 +57,36 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
   </component>
-  <component name="RunManager" selected="Kotlin.TavernKt">
-    <configuration name="GameKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.bignerdranch.nyethack" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Development\Kotlin\kotlin_nyehack\src\com\bignerdranch\nyethack" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.com.bignerdranch.nyethack.GameKt">
+    <configuration name="com.bignerdranch.nyethack.GameKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="NyetHack" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="GameKt" />
+      <option name="MAIN_CLASS_NAME" value="com.bignerdranch.nyethack.GameKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TavernKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="com.bignerdranch.nyethack.TavernKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="NyetHack" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="TavernKt" />
+      <option name="MAIN_CLASS_NAME" value="com.bignerdranch.nyethack.TavernKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -81,8 +94,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.TavernKt" />
-        <item itemvalue="Kotlin.GameKt" />
+        <item itemvalue="Kotlin.com.bignerdranch.nyethack.GameKt" />
+        <item itemvalue="Kotlin.com.bignerdranch.nyethack.TavernKt" />
       </list>
     </recent_temporary>
   </component>
@@ -117,7 +130,9 @@
       <workItem from="1577739161616" duration="1567000" />
       <workItem from="1577985674322" duration="5176000" />
       <workItem from="1578000261284" duration="6651000" />
-      <workItem from="1578011388594" duration="4473000" />
+      <workItem from="1578011388594" duration="4552000" />
+      <workItem from="1578017482731" duration="11000" />
+      <workItem from="1578078619727" duration="3807000" />
     </task>
     <task id="LOCAL-00001" summary="Chapter 4 Functions">
       <created>1577497175879</created>
@@ -161,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577991437045</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Chapter 10 List and sets">
+      <created>1578016136582</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1578016136582</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,71 +204,75 @@
       <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state x="1913" y="523" key="#Project_Structure/0.0.3440.1560@0.0.3440.1560" timestamp="1577486641860" />
-    <state x="1929" y="412" key="CommitChangelistDialog2" timestamp="1578007390197">
-      <screen x="0" y="0" width="3440" height="1400" />
+    <state x="2311" y="497" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1578086945449">
+      <screen x="0" y="0" width="3440" height="1560" />
+    </state>
+    <state x="2311" y="497" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.3440.1560@0.0.3440.1560" timestamp="1578086945449" />
+    <state x="1928" y="459" key="CommitChangelistDialog2" timestamp="1578016136161">
+      <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state x="1929" y="412" key="CommitChangelistDialog2/0.0.3440.1400@0.0.3440.1400" timestamp="1578007390197" />
-    <state x="1928" y="459" key="CommitChangelistDialog2/0.0.3440.1560@0.0.3440.1560" timestamp="1577497175424" />
+    <state x="1928" y="459" key="CommitChangelistDialog2/0.0.3440.1560@0.0.3440.1560" timestamp="1578016136161" />
     <state x="2152" y="459" key="CommitChangelistDialog2/0.0.3839.1560@0.0.3839.1560" timestamp="1577650981433" />
     <state x="2153" y="459" key="CommitChangelistDialog2/0.0.3840.1560@0.0.3840.1560" timestamp="1577663158052" />
-    <state width="1479" height="480" key="GridCell.Tab.0.bottom" timestamp="1578016096009">
+    <state width="1639" height="310" key="GridCell.Tab.0.bottom" timestamp="1578086991350">
       <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state width="1674" height="372" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1578007306493" />
-    <state width="1479" height="480" key="GridCell.Tab.0.bottom/0.0.3440.1560@0.0.3440.1560" timestamp="1578016096009" />
+    <state width="1639" height="310" key="GridCell.Tab.0.bottom/0.0.3440.1560@0.0.3440.1560" timestamp="1578086991350" />
     <state width="1479" height="321" key="GridCell.Tab.0.bottom/0.0.3839.1560@0.0.3839.1560" timestamp="1577651002281" />
     <state width="1479" height="262" key="GridCell.Tab.0.bottom/0.0.3840.1560@0.0.3840.1560" timestamp="1577665910911" />
-    <state width="1479" height="480" key="GridCell.Tab.0.center" timestamp="1578016096009">
+    <state width="1639" height="310" key="GridCell.Tab.0.center" timestamp="1578086991350">
       <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state width="1674" height="372" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1578007306493" />
-    <state width="1479" height="480" key="GridCell.Tab.0.center/0.0.3440.1560@0.0.3440.1560" timestamp="1578016096009" />
+    <state width="1639" height="310" key="GridCell.Tab.0.center/0.0.3440.1560@0.0.3440.1560" timestamp="1578086991350" />
     <state width="1479" height="321" key="GridCell.Tab.0.center/0.0.3839.1560@0.0.3839.1560" timestamp="1577651002280" />
     <state width="1479" height="262" key="GridCell.Tab.0.center/0.0.3840.1560@0.0.3840.1560" timestamp="1577665910911" />
-    <state width="1479" height="480" key="GridCell.Tab.0.left" timestamp="1578016096009">
+    <state width="1639" height="310" key="GridCell.Tab.0.left" timestamp="1578086991350">
       <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state width="1674" height="372" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1578007306493" />
-    <state width="1479" height="480" key="GridCell.Tab.0.left/0.0.3440.1560@0.0.3440.1560" timestamp="1578016096009" />
+    <state width="1639" height="310" key="GridCell.Tab.0.left/0.0.3440.1560@0.0.3440.1560" timestamp="1578086991350" />
     <state width="1479" height="321" key="GridCell.Tab.0.left/0.0.3839.1560@0.0.3839.1560" timestamp="1577651002280" />
     <state width="1479" height="262" key="GridCell.Tab.0.left/0.0.3840.1560@0.0.3840.1560" timestamp="1577665910911" />
-    <state width="1479" height="480" key="GridCell.Tab.0.right" timestamp="1578016096009">
+    <state width="1639" height="310" key="GridCell.Tab.0.right" timestamp="1578086991350">
       <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state width="1674" height="372" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1578007306493" />
-    <state width="1479" height="480" key="GridCell.Tab.0.right/0.0.3440.1560@0.0.3440.1560" timestamp="1578016096009" />
+    <state width="1639" height="310" key="GridCell.Tab.0.right/0.0.3440.1560@0.0.3440.1560" timestamp="1578086991350" />
     <state width="1479" height="321" key="GridCell.Tab.0.right/0.0.3839.1560@0.0.3839.1560" timestamp="1577651002281" />
     <state width="1479" height="262" key="GridCell.Tab.0.right/0.0.3840.1560@0.0.3840.1560" timestamp="1577665910911" />
-    <state width="1479" height="422" key="GridCell.Tab.1.bottom" timestamp="1578013404392">
+    <state width="1479" height="422" key="GridCell.Tab.1.bottom" timestamp="1578016157017">
       <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state width="1674" height="210" key="GridCell.Tab.1.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1578007025988" />
-    <state width="1479" height="422" key="GridCell.Tab.1.bottom/0.0.3440.1560@0.0.3440.1560" timestamp="1578013404392" />
-    <state width="1479" height="422" key="GridCell.Tab.1.center" timestamp="1578013404392">
+    <state width="1479" height="422" key="GridCell.Tab.1.bottom/0.0.3440.1560@0.0.3440.1560" timestamp="1578016157017" />
+    <state width="1479" height="422" key="GridCell.Tab.1.center" timestamp="1578016157017">
       <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state width="1674" height="210" key="GridCell.Tab.1.center/0.0.3440.1400@0.0.3440.1400" timestamp="1578007025988" />
-    <state width="1479" height="422" key="GridCell.Tab.1.center/0.0.3440.1560@0.0.3440.1560" timestamp="1578013404392" />
-    <state width="1479" height="422" key="GridCell.Tab.1.left" timestamp="1578013404392">
+    <state width="1479" height="422" key="GridCell.Tab.1.center/0.0.3440.1560@0.0.3440.1560" timestamp="1578016157017" />
+    <state width="1479" height="422" key="GridCell.Tab.1.left" timestamp="1578016157017">
       <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state width="1674" height="210" key="GridCell.Tab.1.left/0.0.3440.1400@0.0.3440.1400" timestamp="1578007025988" />
-    <state width="1479" height="422" key="GridCell.Tab.1.left/0.0.3440.1560@0.0.3440.1560" timestamp="1578013404392" />
-    <state width="1479" height="422" key="GridCell.Tab.1.right" timestamp="1578013404392">
+    <state width="1479" height="422" key="GridCell.Tab.1.left/0.0.3440.1560@0.0.3440.1560" timestamp="1578016157017" />
+    <state width="1479" height="422" key="GridCell.Tab.1.right" timestamp="1578016157017">
       <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state width="1674" height="210" key="GridCell.Tab.1.right/0.0.3440.1400@0.0.3440.1400" timestamp="1578007025988" />
-    <state width="1479" height="422" key="GridCell.Tab.1.right/0.0.3440.1560@0.0.3440.1560" timestamp="1578013404392" />
+    <state width="1479" height="422" key="GridCell.Tab.1.right/0.0.3440.1560@0.0.3440.1560" timestamp="1578016157017" />
     <state x="2034" y="507" key="SettingsEditor" timestamp="1577662709578">
       <screen x="0" y="0" width="3840" height="1560" />
     </state>
     <state x="1822" y="507" key="SettingsEditor/0.0.3440.1560@0.0.3440.1560" timestamp="1577494028742" />
     <state x="2034" y="507" key="SettingsEditor/0.0.3840.1560@0.0.3840.1560" timestamp="1577662709578" />
-    <state x="1914" y="537" key="Vcs.Push.Dialog.v2" timestamp="1577991442089">
-      <screen x="0" y="0" width="3440" height="1400" />
+    <state x="1913" y="598" key="Vcs.Push.Dialog.v2" timestamp="1578016138156">
+      <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state x="1914" y="537" key="Vcs.Push.Dialog.v2/0.0.3440.1400@0.0.3440.1400" timestamp="1577991442089" />
-    <state x="1913" y="598" key="Vcs.Push.Dialog.v2/0.0.3440.1560@0.0.3440.1560" timestamp="1577497181119" />
+    <state x="1913" y="598" key="Vcs.Push.Dialog.v2/0.0.3440.1560@0.0.3440.1560" timestamp="1578016138156" />
     <state x="2135" y="598" key="Vcs.Push.Dialog.v2/0.0.3839.1560@0.0.3839.1560" timestamp="1577650991797" />
     <state x="2136" y="598" key="Vcs.Push.Dialog.v2/0.0.3840.1560@0.0.3840.1560" timestamp="1577663168086" />
     <state x="1977" y="414" key="run.anything.popup" timestamp="1577487849826">
