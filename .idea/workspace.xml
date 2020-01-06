@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e3935ad-0320-4c50-a14e-6073483e74d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/bignerdranch/nyethack/Navigation.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bignerdranch/nyethack/Creature.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bignerdranch/nyethack/Game.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bignerdranch/nyethack/Game.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bignerdranch/nyethack/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bignerdranch/nyethack/Player.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +16,7 @@
       <list>
         <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Interface" />
       </list>
     </option>
   </component>
@@ -229,14 +229,18 @@
       <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state x="1913" y="523" key="#Project_Structure/0.0.3440.1560@0.0.3440.1560" timestamp="1577486641860" />
+    <state x="2371" y="417" key="#com.intellij.ide.util.MemberChooser" timestamp="1578344555830">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2371" y="417" key="#com.intellij.ide.util.MemberChooser/0.0.3440.1400@0.0.3440.1400" timestamp="1578344555830" />
     <state x="2311" y="497" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1578086945449">
       <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state x="2311" y="497" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.3440.1560@0.0.3440.1560" timestamp="1578086945449" />
-    <state x="1928" y="459" key="CommitChangelistDialog2" timestamp="1578171180213">
-      <screen x="0" y="0" width="3440" height="1560" />
+    <state x="1929" y="412" key="CommitChangelistDialog2" timestamp="1578346007504">
+      <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1929" y="412" key="CommitChangelistDialog2/0.0.3440.1400@0.0.3440.1400" timestamp="1578007390197" />
+    <state x="1929" y="412" key="CommitChangelistDialog2/0.0.3440.1400@0.0.3440.1400" timestamp="1578346007504" />
     <state x="1928" y="459" key="CommitChangelistDialog2/0.0.3440.1560@0.0.3440.1560" timestamp="1578171180213" />
     <state x="2152" y="459" key="CommitChangelistDialog2/0.0.3839.1560@0.0.3839.1560" timestamp="1577650981433" />
     <state x="2153" y="459" key="CommitChangelistDialog2/0.0.3840.1560@0.0.3840.1560" timestamp="1577663158052" />
@@ -293,9 +297,10 @@
     </state>
     <state width="1674" height="210" key="GridCell.Tab.1.right/0.0.3440.1400@0.0.3440.1400" timestamp="1578007025988" />
     <state width="1479" height="422" key="GridCell.Tab.1.right/0.0.3440.1560@0.0.3440.1560" timestamp="1578016157017" />
-    <state x="2034" y="507" key="SettingsEditor" timestamp="1578276840114">
-      <screen x="0" y="0" width="3840" height="1560" />
+    <state x="1822" y="455" key="SettingsEditor" timestamp="1578337231851">
+      <screen x="0" y="0" width="3440" height="1400" />
     </state>
+    <state x="1822" y="455" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1578337231851" />
     <state x="1822" y="507" key="SettingsEditor/0.0.3440.1560@0.0.3440.1560" timestamp="1578167965073" />
     <state x="2034" y="507" key="SettingsEditor/0.0.3840.1560@0.0.3840.1560" timestamp="1578276840114" />
     <state x="1913" y="598" key="Vcs.Push.Dialog.v2" timestamp="1578171206731">
