@@ -8,6 +8,7 @@ class Player(name: String,
              private val isImmortal: Boolean)
 {
     val hometown= selectHometown()
+    var currentPosition = Coordinate(0,0)
 
 
     init {
