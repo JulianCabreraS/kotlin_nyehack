@@ -7,10 +7,13 @@ const val TAVERN_NAME ="Taernyl's Folly"
 
 
 val menuList = File("data/tavern-menu-data.txt").readText().split("\n")
-val patronGold = mutableMapOf<String, Double>()
+
 var patronList = mutableListOf<String>("Eli", "Mordoc", "Sophie")
 val lastName = listOf<String>("Ironfoot", "Fernsworth", "Baggins")
 val uniquePatrons = mutableSetOf<String>()
+val patronGold = mutableMapOf<String, Double>()
+
+
 
 
 fun main(args: Array<String>)
@@ -31,8 +34,8 @@ fun main(args: Array<String>)
     }
 
     (0..9).forEach {
-        val first = patronList.shuffled().first()
-        val last = lastName.shuffled().first()
+        val first = patronList.random()
+        val last = lastName.random()
         val name = "$first $last"
         uniquePatrons += name
     }
@@ -45,8 +48,8 @@ fun main(args: Array<String>)
     var orderCount =0
     while(orderCount <=9){
         placeOrder(
-            uniquePatrons.shuffled().first(),
-            menuList.shuffled().first()
+            uniquePatrons.random(),
+            menuList.shuffled().random()
         )
         orderCount++
     }

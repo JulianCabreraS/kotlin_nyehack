@@ -49,8 +49,7 @@ class Player(name: String,
     private fun selectHometown() = File("data/towns.txt")
         .readText()
         .split("\n")
-        .shuffled()
-        .first()
+        .random()
 
 
     fun castFireball(numFireballs: Int = 2) = println("a glass of fireball into existence (x$numFireballs)")
