@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e3935ad-0320-4c50-a14e-6073483e74d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/bignerdranch/nyethack/extensions/IterableExt.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bignerdranch/nyethack/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bignerdranch/nyethack/Player.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bignerdranch/nyethack/Tavern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bignerdranch/nyethack/Tavern.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +137,7 @@
       <workItem from="1578157037973" duration="6012000" />
       <workItem from="1578246110738" duration="4007000" />
       <workItem from="1578274384573" duration="3224000" />
-      <workItem from="1578435880945" duration="399000" />
+      <workItem from="1578435880945" duration="1293000" />
     </task>
     <task id="LOCAL-00001" summary="Chapter 4 Functions">
       <created>1577497175879</created>
@@ -218,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578346121468</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Chapter 18. Extensions">
+      <created>1578436460521</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1578436460521</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +240,8 @@
     <MESSAGE value="Chapter 12. Defining classes" />
     <MESSAGE value="Chapter 14 Inheritance" />
     <MESSAGE value="Chapter 16. Interfaces and abstract classses" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chapter 16. Interfaces and abstract classses" />
+    <MESSAGE value="Chapter 18. Extensions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chapter 18. Extensions" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1913" y="523" key="#Project_Structure" timestamp="1577486641860">
@@ -257,6 +263,10 @@
     <state x="1928" y="459" key="CommitChangelistDialog2/0.0.3440.1560@0.0.3440.1560" timestamp="1578171180213" />
     <state x="2152" y="459" key="CommitChangelistDialog2/0.0.3839.1560@0.0.3839.1560" timestamp="1577650981433" />
     <state x="2153" y="459" key="CommitChangelistDialog2/0.0.3840.1560@0.0.3840.1560" timestamp="1577663158052" />
+    <state x="1433" y="174" width="1534" height="1061" key="DiffContextDialog" timestamp="1578436914289">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1433" y="174" width="1534" height="1061" key="DiffContextDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1578436914289" />
     <state x="2207" y="572" key="FileChooserDialogImpl" timestamp="1578346232691">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
@@ -317,16 +327,17 @@
     <state x="1822" y="455" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1578337231851" />
     <state x="1822" y="507" key="SettingsEditor/0.0.3440.1560@0.0.3440.1560" timestamp="1578167965073" />
     <state x="2034" y="507" key="SettingsEditor/0.0.3840.1560@0.0.3840.1560" timestamp="1578276840114" />
-    <state x="1914" y="537" key="Vcs.Push.Dialog.v2" timestamp="1578346134229">
+    <state x="1914" y="537" key="Vcs.Push.Dialog.v2" timestamp="1578436576573">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1914" y="537" key="Vcs.Push.Dialog.v2/0.0.3440.1400@0.0.3440.1400" timestamp="1578346134229" />
+    <state x="1914" y="537" key="Vcs.Push.Dialog.v2/0.0.3440.1400@0.0.3440.1400" timestamp="1578436576573" />
     <state x="1913" y="598" key="Vcs.Push.Dialog.v2/0.0.3440.1560@0.0.3440.1560" timestamp="1578171206731" />
     <state x="2135" y="598" key="Vcs.Push.Dialog.v2/0.0.3839.1560@0.0.3839.1560" timestamp="1577650991797" />
     <state x="2136" y="598" key="Vcs.Push.Dialog.v2/0.0.3840.1560@0.0.3840.1560" timestamp="1577663168086" />
-    <state x="2236" y="799" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578171171499">
-      <screen x="0" y="0" width="3440" height="1560" />
+    <state x="2236" y="717" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578436901289">
+      <screen x="0" y="0" width="3440" height="1400" />
     </state>
+    <state x="2236" y="717" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.3440.1400@0.0.3440.1400" timestamp="1578436901289" />
     <state x="2236" y="799" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.3440.1560@0.0.3440.1560" timestamp="1578171171499" />
     <state x="1977" y="414" key="run.anything.popup" timestamp="1577487849826">
       <screen x="0" y="0" width="3440" height="1560" />

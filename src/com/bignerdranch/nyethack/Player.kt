@@ -9,7 +9,7 @@ class Player(name: String,
 {
 
     override val diceCount: Int =3
-    override val diceSide: Int = 6
+    override val diceSides = 6
 
 
 
